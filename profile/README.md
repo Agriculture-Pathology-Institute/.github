@@ -15,7 +15,7 @@ Core Architecture Components & Repositories
 
 The entire multi-university engineering consortium handles code development by isolating tasks into three discrete, clean repositories to guarantee absolute architectural conformity and zero dynamic memory fragmentation:
 
-1\. 📡 API / .github (This Workspace)
+1\. API / .github (This Workspace)
 -------------------------------------
 
 The master software abstraction, microclimatological tracking core, and server-to-server routing network.
