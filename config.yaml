@@ -50,3 +50,15 @@ hydrologic_stormwater_routing:
   
   # Fire-retardant mud barriers configurations
   subgrade_saturation_target_percent: 85.0 # Target soil water fill to establish fire blocks
+
+# =========================================================================
+# DOMAIN ZONE: NATURAL FARMING & SUBGRADE WATERWAY PROFILING
+# Configures soft-dirt paleo-channel preservation and root zone locks
+# =========================================================================
+natural_farming_irrigation_profiles:
+  paleo_channel_trace_sensitivity: 0.95   # Accuracy rating for low-frequency sound wave filters
+  maximum_allowable_root_encroachment_mm: 150.0 # Clear distance buffer to keep clear of root flares
+  contour_swale_base_slope_ratio: 0.05    # Standard 5% drop to gently channel stormwater
+  
+  # Fire-retardant green boundary walls
+  natural_moisture_retention_target: 0.22 # Minimum volumetric water content to establish fire breaks
