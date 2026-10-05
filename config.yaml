@@ -30,3 +30,16 @@ geotechnical_sub_surface_modeling:
   # Hydrologic storm routing parameters matching local Washington terrain [1.15]
   stormwater_precipitation_intensity_mm_hr: 75.0 # Peak 100-year storm safety baseline
   fire_break_subgrade_moisture_threshold: 0.18   # Minimum soil dampness to limit root flare spreads
+
+# =========================================================================
+# DOMAIN ZONE: PLANETARY HYDROLOGIC STORMWATER ROUTING
+# Models exponential infiltration decay and dynamic shallow water pooling
+# =========================================================================
+hydrologic_stormwater_routing:
+  soil_hydraulic_conductivity_mm_hr: 8.5   # Core permeability rating for farm silt/loam
+  catchment_basin_area_meters2: 750.0      # Calculated acreage feeding drainage sinks
+  critical_pooling_diameter_cutoff_m: 25.0 # Absolute safety limit before vehicle extraction
+  pooling_expansion_velocity_limit_m_hr: 5.0 # Max velocity of surface boundary growth
+  
+  # Fire-retardant mud barriers configurations
+  subgrade_saturation_target_percent: 85.0 # Target soil water fill to establish fire blocks
