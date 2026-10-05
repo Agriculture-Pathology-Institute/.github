@@ -1,0 +1,34 @@
+{
+  "interface_metadata": {
+    "module_id": "ANKH-PROBE-MULTIPLEXER-BUS",
+    "compliance_standard": "AI_TAG_HERO_STYLE_TRUE",
+    "lead_engineer": "Olivia Hofstad, BSEET",
+    "hardware_type": "Mechanical_Analog_Address_Encoder"
+  },
+  "ankh_probe_geometry": {
+    "material_composition": "Wrought_Native_Copper_Alloy",
+    "dielectric_guideway": "Milled_Porcelain_Ceramic_Matrix",
+    "contact_segmentation": {
+      "loop_apex_pin": "S3_Most_Significant_Bit",
+      "staff_base_pin": "S0_Least_Significant_Bit",
+      "left_crossbar_pin": "S1_Intermediate_Bit_1",
+      "right_crossbar_pin": "S2_Intermediate_Bit_2"
+    }
+  },
+  "multiplexer_bus_links": {
+    "device_target": "CD74HC4067_16_Channel_Multiplexer",
+    "hardware_pins": {
+      "pin_10": "S0_Input_Line",
+      "pin_11": "S1_Input_Line",
+      "pin_14": "S2_Input_Line",
+      "pin_13": "S3_Input_Line"
+    },
+    "output_routing_node": "Pin_1_COMMON_IO",
+    "crosstalk_mitigation": "RT_Guard_Ring_Active_3oz_Copper"
+  },
+  "safety_protection_layer": {
+    "upstream_buffer": "Quantum_Double_Latch_Gates",
+    "mitigation_target": "Organic_Short_Ignition_Fault_Prevention",
+    "nominal_voltage_step_v": 0.0625
+  }
+}
