@@ -75,3 +75,16 @@ volumetric_leveling_square_constraints:
   # Footprint dimensions limits
   minimum_tower_footprint_width_m: 2.5     # Tiny tower base limit anchor
   maximum_machinery_pad_width_m: 30.0      # Maximum single cast slab boundary width
+
+# =========================================================================
+# DOMAIN ZONE: WIND ENERGY HARVESTING & TURBINE SITING CONSTRAINTS
+# Models Weibull distribution functions and Betz aerodynamic limits [1.1]
+# =========================================================================
+wind_energy_harvesting_siting:
+  anemometer_calibration_multiplier: 1.414 # Scaling constant for optoelectronic sensors
+  minimum_hub_height_clearance_meters: 30.0 # Elevation height of target wind mill blade core
+  target_net_offset_efficiency_limit: 0.593 # Absolute Betz coefficient extraction lock [1.1]
+  
+  # Power threshold parameter profiles
+  extreme_gale_cutoff_velocity_kts: 45.0  # Mandatory mechanical survival brake trip [1.1]
+
