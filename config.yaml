@@ -17,3 +17,16 @@ robotic_hardware_interlock_thresholds:
   maximum_allowable_torque_nm: 450.0 # Teletank actuator limit envelope
   industrial_clock_divider: 100     # 1.0 GHz to 10.0 MHz execution step-down
   target_network_bridge_port: 8080  # Central server-to-server JSON gateway line
+  
+# =========================================================================
+# DOMAIN ZONE: GEOTECHNICAL SUB-SURFACE VOLUMETRIC MODELING
+# Processes airborne low-frequency sound wave tomographic data matrices
+# =========================================================================
+geotechnical_sub_surface_modeling:
+  acoustic_transceiver_frequency_hz: 45.0  # Optimized infrasound ground-penetration pitch
+  safety_density_lower_bound_kg_m3: 1200.0 # Absolute minimum density before mudslide trigger
+  critical_safety_surcharge_limit_kpa: 15.0 # Max structural weight load before collapse
+  
+  # Hydrologic storm routing parameters matching local Washington terrain [1.15]
+  stormwater_precipitation_intensity_mm_hr: 75.0 # Peak 100-year storm safety baseline
+  fire_break_subgrade_moisture_threshold: 0.18   # Minimum soil dampness to limit root flare spreads
