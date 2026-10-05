@@ -62,3 +62,16 @@ natural_farming_irrigation_profiles:
   
   # Fire-retardant green boundary walls
   natural_moisture_retention_target: 0.22 # Minimum volumetric water content to establish fire breaks
+
+# =========================================================================
+# DOMAIN ZONE: 3D VOLUMETRIC LEVELING SQUARE CONSTRAINTS
+# Models Terzaghi bearing safety constants across multi-altitude footprints
+# =========================================================================
+volumetric_leveling_square_constraints:
+  maximum_allowable_slope_grade_deg: 15.0  # Max incline before pad grading is blocked
+  cohesion_baseline_coefficient_kpa: 20.0  # Standard continuous internal soil bond strength
+  bearing_capacity_safety_factor: 3.5      # Structural safety cushion multiplier
+  
+  # Footprint dimensions limits
+  minimum_tower_footprint_width_m: 2.5     # Tiny tower base limit anchor
+  maximum_machinery_pad_width_m: 30.0      # Maximum single cast slab boundary width
