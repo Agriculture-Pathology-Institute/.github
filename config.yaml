@@ -13,6 +13,13 @@ microclimate_atmospheric_physics:
   ground_albedo_coefficient: 0.25   # Reflectivity rating for baseline crop canopies
   enforced_gale_shutoff_kts: 45.0   # Clear air velocity maximum cutoff boundary
 
+authorized_consortium_peers:
+  - "UNIVERSITY_OF_WASHINGTON_AG_COHORT"
+  - "KANSAS_STATE_UNIVERSITY_PRECISION_TEAM"
+  - "CENTRAL_WASHINGTON_UNIVERSITY_GRID"
+  - "BAYLOR_UNIVERSITY_ASTRONOMICAL_CORE"
+  - "EASTERN_WASHINGTON_UNIVERSITY_SUBNET"
+
 robotic_hardware_interlock_thresholds:
   maximum_allowable_torque_nm: 450.0 # Teletank actuator limit envelope
   industrial_clock_divider: 100     # 1.0 GHz to 10.0 MHz execution step-down
