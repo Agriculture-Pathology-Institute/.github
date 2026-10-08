@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # Existing Python telemetry infrastructure handling parallel Numba loops
+  univac-core:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: "host"
+    restart: always
+    volumes:
+      - .:/workspace
+
+  # New Service: SWUI Control Room HMI & Camera Pipeline
+  swui-dashboard:
+    build:
+      context: ./src/gui/swui_dashboard
+    network_mode: "host"
+    restart: always
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - univac-core
